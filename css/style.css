@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+:root {
+    /* Los colores son extraidos de la UI original del juego */
+    --color-main: #01ffe5;
+    --color-accompaniment: #1c5c5e;
+    --color-details: #fea733;
+    --color-degraded-light : #298f91;
+    --color-degraded-dark: #1e353b;
+    --color-extra-marker1: #ed145b;
+    --color-extra-marker2: #15ed8a;
+    /* Seteamos algunas medidas que se usaran en varios lugares */
+    --header-height: 60px;
+    --margin-standar: 10px;
+    /* Seteamos algunos estilos generales */
+    --border-detail: 4px solid var(--color-details);
+}
+
+/* Seteamos el minimo de ancho del body a 1000px ya que consideraremos eso como el tamaño tablet */
+body {
+    height: 100vh;
+    min-width: 1000px;
+    overflow-x: hidden;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* HEADER */
+
+header {
+    background-color: var(--color-main);
+    margin-bottom: var(--margin-standar);
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    align-items: center;
+}
+
+/* Le damos estilo al boton, lo seteamos como absolute para moverlo facilmente cuando le demos click */
+.introduction-button {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    font-size: 1.3em;
+    cursor: pointer;
+    border: var(--border-detail);
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: var(--color-degraded-light);
+    color: white;
+    width: 180px;
+    transition: right 0.3s;
+    z-index: 10;
+}
+
+/* Seteamos el estilo de la clase que tomara cuando se le de click al boton */
+.show-introduction {
+    right: 747px;
+}
+
+/* Ademas rotamos el icono */
+.show-introduction>span {
+    transform: rotate(180deg);
+}
+
+/* Le damos una animacion al icono del boton */
+.material-symbols-outlined {
+    position: relative;
+    animation: move 0.5s infinite alternate ;
+}
+
+@keyframes move {
+    from {
+        left: 0px;
+    }
+    to {
+        left: -3px;
+    }
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* NAV */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px 0 120px;
+}
+
+.button-nav {
+    border: none;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 120px;
+    font-weight: bold;
+}
+
+.button-nav:nth-of-type(1) {
+    background-color: var(--color-main);
+}
+
+.button-nav:nth-of-type(2) {
+    background-color: var(--color-accompaniment);
+    color: white;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* MAIN */
+
+main {
+    display: flex;
+    width: 98%;
+    margin: auto;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* INTRODUCTION */
+
+/* Seteamos los estilos de la seccion de introduccion, iniciara oculta, fuera de la pantalla para no ser reiterativo con los usuarios que ya sepan usar la pagina, pero siempre estara disponible para volver a leer */
+.introduction {
+    background: linear-gradient(90deg, var(--color-degraded-light) 0%,var(--color-degraded-dark) 60%, var(--color-degraded-dark) 100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0px;
+    width: 750px;
+    padding: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: block;
+    transition: right 0.3s;
+    border: var(--border-detail);
+}
+
+/* Seteamos el estilo de la clase que tomara cuando se le de click al boton para mostrar la introduccion */
+.introduction-hidden {
+    right: -750px;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* TEAM SLOTS */
+
+.team-slots-container {
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.team-slot {
+    height: 60px;
+    border: 4px solid transparent;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: var(--color-accompaniment);
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.actual-slot {
+    background-color: var(--color-main);
+    color: black;
+    border: var(--border-detail);
+    border-right: none;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* TEAM SECTION */
+
+.team-section {
+    width: calc(50% - 60px);
+    background-color: var(--color-main);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px;
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+/* RESUME SECTION */
+
+.resume-section {
+    background-color: var(--color-accompaniment);
+    width: 50%;
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+}

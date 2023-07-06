@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TemTeam</title>
+    <!-- FUENTE -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- ESTILOS DE LA PAGINA -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>TemTeam</h1>
+        <button class="introduction-button" id="introduction-button"><span class="material-symbols-outlined">keyboard_double_arrow_left</span> Introduction</button>
+    </header>
+
+    <nav>
+        <button class="button-nav">Team Builder</button>
+        <button class="button-nav">Team Resume</button>
+    </nav>
+
+    <main>
+
+        <article id="introduction" class="introduction-hidden introduction">
+            <h1>Titulo de la introduccion</h1>
+            <ul>
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+                <li>d</li>
+                <li>e</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi expedita corrupti, quae quia reprehenderit quaerat id aperiam! Quisquam cum, reiciendis ut obcaecati, corrupti laudantium unde, sequi adipisci nam aspernatur ea. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit asperiores quisquam iusto praesentium illo porro dicta fugiat, soluta odit dolore eius repellendus nostrum quos corrupti eveniet possimus nisi vero totam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab deleniti architecto quibusdam provident sed dolores dolorem libero nostrum saepe distinctio ullam, alias, aliquam molestiae. Fuga nulla eius accusantium non reiciendis.</p>
+        </article>
+
+        
+        <div class="team-slots-container">
+            <button class="team-slot actual-slot">+</button>
+            <button class="team-slot">+</button>
+            <button class="team-slot">+</button>
+            <button class="team-slot">+</button>
+            <button class="team-slot">+</button>
+            <button class="team-slot">+</button>
+            <button class="team-slot">+</button>
+            <button class="team-slot">+</button>
+        </div>
+
+        <section class="team-section">
+            <label for="name-temtem" class="name-temtem-container">
+                <h2>Name</h2>
+                <input type="text" name="name-temtem" id="name-temtem" placeholder="[Select one]">
+            </label>
+            <div class="number-temtem-container">
+                <h3>Number: </h3>
+                <span id="number-temtem">00</span>
+            </div>
+            <div class="type-temtem-container">
+                <h3>Type: </h3>
+                
+                <span>T1</span>
+                <span>T2</span>
+            
+            </div>
+            <label for="ability-temtem" class="ability-temtem-container">
+                <h3>Ability</h3>
+                <input type="text" name="ability-temtem" id="ability-temtem" placeholder="[Select one]">
+            </label>
+            <div class="stats-container">
+                <div class="stats-description">
+                    <p>HP</p>
+                    <p>STA</p>
+                    <p>SPD</p>
+                    <p>ATK</p>
+                    <p>DEF</p>
+                    <p>SPATK</p>
+                    <p>SPDEF</p>
+                    <p>TOTAL</p>
+                </div>
+                <div class="stats-base">
+                    <input type="number" value="" readonly>
+                    <input type="number" value="" readonly>
+                    <input type="number" value="" readonly>
+                    <input type="number" value="" readonly>
+                    <input type="number" value="" readonly>
+                    <input type="number" value="" readonly>
+                    <input type="number" value="" readonly>
+                    <input type="number" value="" readonly>
+                </div>
+                <div class="stats-tvs-range">
+                    <input type="range" min="0" max="500">
+                    <input type="range" min="0" max="500">
+                    <input type="range" min="0" max="500">
+                    <input type="range" min="0" max="500">
+                    <input type="range" min="0" max="500">
+                    <input type="range" min="0" max="500">
+                    <input type="range" min="0" max="500">
+                </div>
+                <div class="stats-tvs">
+                    <input type="number" value="" min="0" max="500">
+                    <input type="number" value="" min="0" max="500">
+                    <input type="number" value="" min="0" max="500">
+                    <input type="number" value="" min="0" max="500">
+                    <input type="number" value="" min="0" max="500">
+                    <input type="number" value="" min="0" max="500">
+                    <input type="number" value="" min="0" max="500">
+                    <input type="number" value="" readonly>
+                </div>
+                <div class="stats-svs">
+                    <input type="number" value="50" min="0" max="50" readonly>
+                    <input type="number" value="50" min="0" max="50" readonly>
+                    <input type="number" value="50" min="0" max="50" readonly>
+                    <input type="number" value="50" min="0" max="50" readonly>
+                    <input type="number" value="50" min="0" max="50" readonly>
+                    <input type="number" value="50" min="0" max="50" readonly>
+                    <input type="number" value="50" min="0" max="50" readonly>
+                    <label for="max-svs">
+                        <input type="checkbox" name="max-svs" id="max-svs" checked>
+                        Max SVs
+                    </label>
+                </div>
+                <div class="stats-total">
+                    <input type="number" value="" readonly>
+                    <input type="number" value="" readonly>
+                    <input type="number" value="" readonly>
+                    <input type="number" value="" readonly>
+                    <input type="number" value="" readonly>
+                    <input type="number" value="" readonly>
+                    <input type="number" value="" readonly>
+                </div>
+            </div>
+            <div class="attack-temtem-container">
+                <h3>Attacks</h3>
+                <input type="text" id="attack-temtem-1" placeholder="[Select one]">
+                <input type="text" id="attack-temtem-2" placeholder="[Select one]">
+                <input type="text" id="attack-temtem-3" placeholder="[Select one]">
+                <input type="text" id="attack-temtem-4" placeholder="[Select one]">
+            </div>
+            <label for="gear-temtem" class="gear-temtem-container">
+                <h3>Gear</h3>
+                <input type="text" name="gear-temtem" id="gear-temtem" placeholder="[Select one]">
+            </label>
+        </section>
+        
+        <section class="resume-section">
+            <h5>resume</h5>
+        </section>
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
