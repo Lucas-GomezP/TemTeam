@@ -204,12 +204,31 @@ main {
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr minmax(100px, max-content);
-    
+    grid-template-rows: 50px 50px minmax(250px, max-content) min-content;
+}
+
+.name-temtem-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.number-temtem-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ability-temtem-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .type-temtem-container {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .type-temtem-container>img {
@@ -238,7 +257,7 @@ input {
 }
 
 input[type="number"] {
-    width: 6ch;
+    width: 7ch;
     text-align: center;
 }
 
@@ -266,6 +285,32 @@ input[type="number"] {
 
 input[type="range"] {
     width: 300px;
+}
+
+.searcher {
+    grid-column: 1/4;
+    background-color: lightblue;
+}
+
+.search-result {
+    border-collapse: collapse;
+    background-color: var(--color-degraded-dark);
+    color: white;
+    width: 100%;
+}
+
+.search-result tr:nth-of-type(odd) {
+    background-color: var(--color-accompaniment);
+}
+
+.search-result th {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.search-result td {
+    border: 1px solid black;
+    padding: 0 3px;
 }
 
 

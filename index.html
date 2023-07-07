@@ -85,36 +85,36 @@
                 </div>
                 <div class="stats-base">
                     <h3>BASE</h3>
-                    <input type="number" value="" readonly>
-                    <input type="number" value="" readonly>
-                    <input type="number" value="" readonly>
-                    <input type="number" value="" readonly>
-                    <input type="number" value="" readonly>
-                    <input type="number" value="" readonly>
-                    <input type="number" value="" readonly>
-                    <input type="number" value="" readonly>
+                    <input type="number" value="0" readonly>
+                    <input type="number" value="0" readonly>
+                    <input type="number" value="0" readonly>
+                    <input type="number" value="0" readonly>
+                    <input type="number" value="0" readonly>
+                    <input type="number" value="0" readonly>
+                    <input type="number" value="0" readonly>
+                    <input type="number" value="0" readonly>
                 </div>
                 <div class="stats-tvs-range">
                     <i></i>
-                    <input type="range" min="0" max="500" value="0">
-                    <input type="range" min="0" max="500" value="0">
-                    <input type="range" min="0" max="500" value="0">
-                    <input type="range" min="0" max="500" value="0">
-                    <input type="range" min="0" max="500" value="0">
-                    <input type="range" min="0" max="500" value="0">
-                    <input type="range" min="0" max="500" value="0">
+                    <input type="range" min="0" max="500" value="0" disabled>
+                    <input type="range" min="0" max="500" value="0" disabled>
+                    <input type="range" min="0" max="500" value="0" disabled>
+                    <input type="range" min="0" max="500" value="0" disabled>
+                    <input type="range" min="0" max="500" value="0" disabled>
+                    <input type="range" min="0" max="500" value="0" disabled>
+                    <input type="range" min="0" max="500" value="0" disabled>
                     <p>Remaining TVs</p>
                 </div>
                 <div class="stats-tvs">
                     <h3>TVs</h3>
-                    <input type="number" value="" min="0" max="500">
-                    <input type="number" value="" min="0" max="500">
-                    <input type="number" value="" min="0" max="500">
-                    <input type="number" value="" min="0" max="500">
-                    <input type="number" value="" min="0" max="500">
-                    <input type="number" value="" min="0" max="500">
-                    <input type="number" value="" min="0" max="500">
-                    <input type="number" value="" min="0" max="1000" readonly>
+                    <input type="number" value="0" min="0" max="500">
+                    <input type="number" value="0" min="0" max="500">
+                    <input type="number" value="0" min="0" max="500">
+                    <input type="number" value="0" min="0" max="500">
+                    <input type="number" value="0" min="0" max="500">
+                    <input type="number" value="0" min="0" max="500">
+                    <input type="number" value="0" min="0" max="500">
+                    <input type="number" value="1000" min="0" max="1000" readonly>
                 </div>
                 <div class="stats-svs">
                     <h3>SVs</h3>
@@ -132,13 +132,13 @@
                 </div>
                 <div class="stats-total">
                     <h3>TOTAL</h3>
-                    <input type="number" value="" readonly>
-                    <input type="number" value="" readonly>
-                    <input type="number" value="" readonly>
-                    <input type="number" value="" readonly>
-                    <input type="number" value="" readonly>
-                    <input type="number" value="" readonly>
-                    <input type="number" value="" readonly>
+                    <input type="number" value="0" readonly>
+                    <input type="number" value="0" readonly>
+                    <input type="number" value="0" readonly>
+                    <input type="number" value="0" readonly>
+                    <input type="number" value="0" readonly>
+                    <input type="number" value="0" readonly>
+                    <input type="number" value="0" readonly>
                 </div>
             </div>
             <div class="attack-temtem-container">
@@ -152,6 +152,23 @@
                 <h3>Gear</h3>
                 <input type="text" name="gear-temtem" id="gear-temtem" placeholder="[Select one]">
             </label>
+            <div class="searcher">
+                <h3>Searcher</h3>
+                <table class="search-result">
+                    <tr id="search-result-headers">
+                        <th>nombre</th>
+                        <th>apellido</th>
+                    </tr>
+                    <tr>
+                        <td>lucasaaaaaaaaaa</td>
+                        <td>gomez</td>
+                    </tr>
+                    <tr>
+                        <td>pepe</td>
+                        <td>poncio</td>
+                    </tr>
+                </table>
+            </div>
         </section>
         
         <section class="resume-section">
@@ -161,5 +178,6 @@
     </main>
 
     <script src="js/main.js"></script>
+    <script src="js/teamBuilder.js"></script>
 </body>
 </html>
