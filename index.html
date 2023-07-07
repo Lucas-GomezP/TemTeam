@@ -59,19 +59,21 @@
                 <h3>Number: </h3>
                 <span id="number-temtem">00</span>
             </div>
-            <div class="type-temtem-container">
-                <h3>Type: </h3>
-                
-                <span>T1</span>
-                <span>T2</span>
-            
+            <div class="image-temtem-container">
+                <img src="img/Unknown.webp" alt="Image of the selected TemTem">
             </div>
             <label for="ability-temtem" class="ability-temtem-container">
                 <h3>Ability</h3>
                 <input type="text" name="ability-temtem" id="ability-temtem" placeholder="[Select one]">
             </label>
+            <div class="type-temtem-container">
+                <h3>Type: </h3>
+                <img src="img/Unknown.webp" alt="Type number one of the TemTem">
+                <img src="img/Unknown.webp" alt="Type number two of the TemTem">
+            </div>
             <div class="stats-container">
                 <div class="stats-description">
+                    <h3>STAT</h3>
                     <p>HP</p>
                     <p>STA</p>
                     <p>SPD</p>
@@ -82,6 +84,7 @@
                     <p>TOTAL</p>
                 </div>
                 <div class="stats-base">
+                    <h3>BASE</h3>
                     <input type="number" value="" readonly>
                     <input type="number" value="" readonly>
                     <input type="number" value="" readonly>
@@ -92,15 +95,18 @@
                     <input type="number" value="" readonly>
                 </div>
                 <div class="stats-tvs-range">
-                    <input type="range" min="0" max="500">
-                    <input type="range" min="0" max="500">
-                    <input type="range" min="0" max="500">
-                    <input type="range" min="0" max="500">
-                    <input type="range" min="0" max="500">
-                    <input type="range" min="0" max="500">
-                    <input type="range" min="0" max="500">
+                    <i></i>
+                    <input type="range" min="0" max="500" value="0">
+                    <input type="range" min="0" max="500" value="0">
+                    <input type="range" min="0" max="500" value="0">
+                    <input type="range" min="0" max="500" value="0">
+                    <input type="range" min="0" max="500" value="0">
+                    <input type="range" min="0" max="500" value="0">
+                    <input type="range" min="0" max="500" value="0">
+                    <p>Remaining TVs</p>
                 </div>
                 <div class="stats-tvs">
+                    <h3>TVs</h3>
                     <input type="number" value="" min="0" max="500">
                     <input type="number" value="" min="0" max="500">
                     <input type="number" value="" min="0" max="500">
@@ -108,9 +114,10 @@
                     <input type="number" value="" min="0" max="500">
                     <input type="number" value="" min="0" max="500">
                     <input type="number" value="" min="0" max="500">
-                    <input type="number" value="" readonly>
+                    <input type="number" value="" min="0" max="1000" readonly>
                 </div>
                 <div class="stats-svs">
+                    <h3>SVs</h3>
                     <input type="number" value="50" min="0" max="50" readonly>
                     <input type="number" value="50" min="0" max="50" readonly>
                     <input type="number" value="50" min="0" max="50" readonly>
@@ -124,6 +131,7 @@
                     </label>
                 </div>
                 <div class="stats-total">
+                    <h3>TOTAL</h3>
                     <input type="number" value="" readonly>
                     <input type="number" value="" readonly>
                     <input type="number" value="" readonly>

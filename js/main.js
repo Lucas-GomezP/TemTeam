@@ -8,9 +8,24 @@ introductionButton.addEventListener('click', () => {
 });
 
 
+// FUNCIONAMIENTO DEL CAMBIO DE SLOTS DEL EQUIPO
+// Utilizamos un querySelector para poder iterar sobre ellos con un forEach
+const teamSlots = document.querySelectorAll('.team-slot');
 
+// Creamos una funcion general para remover ciertas clases de un conjunto seleccionado
+function removeClass(selectorGroup, className) {
+    selectorGroup.forEach(selector => {
+        selector.classList.remove(className);
+    });
+}
 
-
+// Iteramos sobre cada slot para añadirle un evento al hacer click, lo que hara este evento es quitar la clase de 'active-slot' llamando a la funcion y luego le dara al slot que fue clickeado esa clase
+teamSlots.forEach(slot => {
+    slot.addEventListener('click', () => {
+        removeClass(teamSlots, 'actual-slot');
+        slot.classList.add('actual-slot');
+    })
+})
 
 
 
