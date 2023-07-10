@@ -172,23 +172,28 @@ main {
     margin-top: 20px;
 }
 
-.team-slot {
+button[class^="team-slot"] {
     height: 60px;
     border: 4px solid transparent;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     background-color: var(--color-accompaniment);
     color: white;
-    font-size: 2em;
     cursor: pointer;
 }
 
-.actual-slot {
+button[class^="team-slot"] img {
+    object-fit: cover;
+    height: 100%;
+}
+
+button[class~="actual-slot"] {
     background-color: var(--color-main);
-    color: black;
     border: var(--border-detail);
     border-right: none;
 }
+
+
 
 /* ----------------------------------------------------------------------------------------------------- */
 
@@ -231,7 +236,7 @@ main {
     gap: 10px;
 }
 
-.type-temtem-container>img {
+.type-temtem-container img {
     height: 40px;
 }
 
@@ -292,6 +297,18 @@ input[type="range"] {
     background-color: lightblue;
 
 }
+
+
+.wiki-container {
+    width: 100px;
+    margin: auto 0;
+}
+
+.wiki-container img {
+    object-fit: contain;
+    width: 100%;
+}
+
 
 .search-result-container {
     height: 400px;
