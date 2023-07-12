@@ -25,8 +25,7 @@ const teamSlotsInfo = [
             atk : 0,
             def : 0,
             spatk : 0,
-            spdef : 0,
-            total : 0
+            spdef : 0
         },
         total : {
             hp : 0,
@@ -35,11 +34,18 @@ const teamSlotsInfo = [
             atk : 0,
             def : 0,
             spatk : 0,
-            spdef : 0,
-            total : 0
+            spdef : 0
         },
         traits : [],
+        selectedAbility : '',
         techniques : [],
+        actualTechniques : {
+            attackTemtem1 : ['[Select one]', 'none'],
+            attackTemtem2 : ['[Select one]', 'none'],
+            attackTemtem3 : ['[Select one]', 'none'],
+            attackTemtem4 : ['[Select one]', 'none']
+        },
+        gear : '',
         wikiUrl : '',
         eneableEditingStats : false
     },
@@ -66,8 +72,7 @@ const teamSlotsInfo = [
             atk : 0,
             def : 0,
             spatk : 0,
-            spdef : 0,
-            total : 0
+            spdef : 0
         },
         total : {
             hp : 0,
@@ -76,11 +81,18 @@ const teamSlotsInfo = [
             atk : 0,
             def : 0,
             spatk : 0,
-            spdef : 0,
-            total : 0
+            spdef : 0
         },
         traits : [],
+        selectedAbility : '',
         techniques : [],
+        actualTechniques : {
+            attackTemtem1 : ['[Select one]', 'none'],
+            attackTemtem2 : ['[Select one]', 'none'],
+            attackTemtem3 : ['[Select one]', 'none'],
+            attackTemtem4 : ['[Select one]', 'none']
+        },
+        gear : '',
         wikiUrl : '',
         eneableEditingStats : false
     },
@@ -107,8 +119,7 @@ const teamSlotsInfo = [
             atk : 0,
             def : 0,
             spatk : 0,
-            spdef : 0,
-            total : 0
+            spdef : 0
         },
         total : {
             hp : 0,
@@ -117,11 +128,18 @@ const teamSlotsInfo = [
             atk : 0,
             def : 0,
             spatk : 0,
-            spdef : 0,
-            total : 0
+            spdef : 0
         },
         traits : [],
+        selectedAbility : '',
         techniques : [],
+        actualTechniques : {
+            attackTemtem1 : ['[Select one]', 'none'],
+            attackTemtem2 : ['[Select one]', 'none'],
+            attackTemtem3 : ['[Select one]', 'none'],
+            attackTemtem4 : ['[Select one]', 'none']
+        },
+        gear : '',
         wikiUrl : '',
         eneableEditingStats : false
     },
@@ -148,8 +166,7 @@ const teamSlotsInfo = [
             atk : 0,
             def : 0,
             spatk : 0,
-            spdef : 0,
-            total : 0
+            spdef : 0
         },
         total : {
             hp : 0,
@@ -158,11 +175,18 @@ const teamSlotsInfo = [
             atk : 0,
             def : 0,
             spatk : 0,
-            spdef : 0,
-            total : 0
+            spdef : 0
         },
         traits : [],
+        selectedAbility : '',
         techniques : [],
+        actualTechniques : {
+            attackTemtem1 : ['[Select one]', 'none'],
+            attackTemtem2 : ['[Select one]', 'none'],
+            attackTemtem3 : ['[Select one]', 'none'],
+            attackTemtem4 : ['[Select one]', 'none']
+        },
+        gear : '',
         wikiUrl : '',
         eneableEditingStats : false
     },
@@ -189,8 +213,7 @@ const teamSlotsInfo = [
             atk : 0,
             def : 0,
             spatk : 0,
-            spdef : 0,
-            total : 0
+            spdef : 0
         },
         total : {
             hp : 0,
@@ -199,11 +222,18 @@ const teamSlotsInfo = [
             atk : 0,
             def : 0,
             spatk : 0,
-            spdef : 0,
-            total : 0
+            spdef : 0
         },
         traits : [],
+        selectedAbility : '',
         techniques : [],
+        actualTechniques : {
+            attackTemtem1 : ['[Select one]', 'none'],
+            attackTemtem2 : ['[Select one]', 'none'],
+            attackTemtem3 : ['[Select one]', 'none'],
+            attackTemtem4 : ['[Select one]', 'none']
+        },
+        gear : '',
         wikiUrl : '',
         eneableEditingStats : false
     },
@@ -230,8 +260,7 @@ const teamSlotsInfo = [
             atk : 0,
             def : 0,
             spatk : 0,
-            spdef : 0,
-            total : 0
+            spdef : 0
         },
         total : {
             hp : 0,
@@ -240,11 +269,18 @@ const teamSlotsInfo = [
             atk : 0,
             def : 0,
             spatk : 0,
-            spdef : 0,
-            total : 0
+            spdef : 0
         },
         traits : [],
+        selectedAbility : '',
         techniques : [],
+        actualTechniques : {
+            attackTemtem1 : ['[Select one]', 'none'],
+            attackTemtem2 : ['[Select one]', 'none'],
+            attackTemtem3 : ['[Select one]', 'none'],
+            attackTemtem4 : ['[Select one]', 'none']
+        },
+        gear : '',
         wikiUrl : '',
         eneableEditingStats : false
     },
@@ -271,8 +307,7 @@ const teamSlotsInfo = [
             atk : 0,
             def : 0,
             spatk : 0,
-            spdef : 0,
-            total : 0
+            spdef : 0
         },
         total : {
             hp : 0,
@@ -281,11 +316,18 @@ const teamSlotsInfo = [
             atk : 0,
             def : 0,
             spatk : 0,
-            spdef : 0,
-            total : 0
+            spdef : 0
         },
         traits : [],
+        selectedAbility : '',
         techniques : [],
+        actualTechniques : {
+            attackTemtem1 : ['[Select one]', 'none'],
+            attackTemtem2 : ['[Select one]', 'none'],
+            attackTemtem3 : ['[Select one]', 'none'],
+            attackTemtem4 : ['[Select one]', 'none']
+        },
+        gear : '',
         wikiUrl : '',
         eneableEditingStats : false
     },
@@ -312,8 +354,7 @@ const teamSlotsInfo = [
             atk : 0,
             def : 0,
             spatk : 0,
-            spdef : 0,
-            total : 0
+            spdef : 0
         },
         total : {
             hp : 0,
@@ -322,11 +363,18 @@ const teamSlotsInfo = [
             atk : 0,
             def : 0,
             spatk : 0,
-            spdef : 0,
-            total : 0
+            spdef : 0
         },
         traits : [],
+        selectedAbility : '',
         techniques : [],
+        actualTechniques : {
+            attackTemtem1 : ['[Select one]', 'none'],
+            attackTemtem2 : ['[Select one]', 'none'],
+            attackTemtem3 : ['[Select one]', 'none'],
+            attackTemtem4 : ['[Select one]', 'none']
+        },
+        gear : '',
         wikiUrl : '',
         eneableEditingStats : false
     }

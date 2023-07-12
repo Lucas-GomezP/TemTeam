@@ -29,5 +29,6 @@ teamSlotsButtons.forEach(slot => {
         slot.classList.add('actual-slot');
         updateSlotData();
         enableEditingStats();
+        searcherLoadCleen('start');
     })
 });

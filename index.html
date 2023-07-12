@@ -53,18 +53,18 @@
         <section class="team-section">
             <label for="name-temtem" class="name-temtem-container">
                 <h2>Name</h2>
-                <input type="text" name="name-temtem" id="name-temtem" placeholder="[Select one]">
+                <input type="text" name="name-temtem" id="name-temtem" placeholder="[Write and select one]">
             </label>
             <div class="number-temtem-container">
                 <h3>Number: </h3>
-                <span id="number-temtem">00</span>
+                <p id="number-temtem">00</p>
             </div>
             <div class="image-temtem-container">
                 <img src="img/Unknown.webp" alt="Image of the selected TemTem" id="image-temtem">
             </div>
             <label for="ability-temtem" class="ability-temtem-container">
                 <h3>Ability</h3>
-                <input type="text" name="ability-temtem" id="ability-temtem" placeholder="[Select one]">
+                <input type="text" name="ability-temtem" id="ability-temtem" placeholder="[Select one]" disabled readonly>
             </label>
             <div class="type-temtem-container">
                 <h3>Type: </h3>
@@ -98,24 +98,24 @@
                 </div>
                 <div class="stats-tvs-range">
                     <i></i>
-                    <input type="range" min="0" max="500" value="0" disabled class="stat-tvs-range1">
-                    <input type="range" min="0" max="500" value="0" disabled class="stat-tvs-range2">
-                    <input type="range" min="0" max="500" value="0" disabled class="stat-tvs-range3">
-                    <input type="range" min="0" max="500" value="0" disabled class="stat-tvs-range4">
-                    <input type="range" min="0" max="500" value="0" disabled class="stat-tvs-range5">
-                    <input type="range" min="0" max="500" value="0" disabled class="stat-tvs-range6">
-                    <input type="range" min="0" max="500" value="0" disabled class="stat-tvs-range7">
+                    <input type="range" min="0" max="500" value="0" disabled class="stat-range-tvs0 hp">
+                    <input type="range" min="0" max="500" value="0" disabled class="stat-range-tvs1 sta">
+                    <input type="range" min="0" max="500" value="0" disabled class="stat-range-tvs2 spd">
+                    <input type="range" min="0" max="500" value="0" disabled class="stat-range-tvs3 atk">
+                    <input type="range" min="0" max="500" value="0" disabled class="stat-range-tvs4 def">
+                    <input type="range" min="0" max="500" value="0" disabled class="stat-range-tvs5 spatk">
+                    <input type="range" min="0" max="500" value="0" disabled class="stat-range-tvs6 spdef">
                     <p>Remaining TVs</p>
                 </div>
                 <div class="stats-tvs">
                     <h3>TVs</h3>
-                    <input type="number" value="0" min="0" max="500" readonly class="stat-tvs1">
-                    <input type="number" value="0" min="0" max="500" readonly class="stat-tvs2">
-                    <input type="number" value="0" min="0" max="500" readonly class="stat-tvs3">
-                    <input type="number" value="0" min="0" max="500" readonly class="stat-tvs4">
-                    <input type="number" value="0" min="0" max="500" readonly class="stat-tvs5">
-                    <input type="number" value="0" min="0" max="500" readonly class="stat-tvs6">
-                    <input type="number" value="0" min="0" max="500" readonly class="stat-tvs7">
+                    <input type="number" value="0" min="0" max="500" readonly class="stat-tvs0 hp">
+                    <input type="number" value="0" min="0" max="500" readonly class="stat-tvs1 sta">
+                    <input type="number" value="0" min="0" max="500" readonly class="stat-tvs2 spd">
+                    <input type="number" value="0" min="0" max="500" readonly class="stat-tvs3 atk">
+                    <input type="number" value="0" min="0" max="500" readonly class="stat-tvs4 def">
+                    <input type="number" value="0" min="0" max="500" readonly class="stat-tvs5 spatk">
+                    <input type="number" value="0" min="0" max="500" readonly class="stat-tvs6 spdef">
                     <input type="number" value="1000" min="0" max="1000" readonly id="remaining-tvs">
                 </div>
                 <div class="stats-svs">
@@ -141,14 +141,14 @@
             </div>
             <div class="attack-temtem-container">
                 <h3>Attacks</h3>
-                <input type="text" id="attack-temtem-1" placeholder="[Select one]">
-                <input type="text" id="attack-temtem-2" placeholder="[Select one]">
-                <input type="text" id="attack-temtem-3" placeholder="[Select one]">
-                <input type="text" id="attack-temtem-4" placeholder="[Select one]">
+                <input type="text" class="attack-temtem1 type-none" placeholder="[Select one]" disabled readonly>
+                <input type="text" class="attack-temtem2 type-none" placeholder="[Select one]" disabled readonly>
+                <input type="text" class="attack-temtem3 type-none" placeholder="[Select one]" disabled readonly>
+                <input type="text" class="attack-temtem4 type-none" placeholder="[Select one]" disabled readonly>
             </div>
-            <label for="gear-temtem" class="gear-temtem-container">
+            <label for="gear-temtem" id="gear-temtem-container">
                 <h3>Gear</h3>
-                <input type="text" name="gear-temtem" id="gear-temtem" placeholder="[Select one]">
+                <input type="text" name="gear-temtem" id="gear-temtem" placeholder="[Write and select one]" disabled>
             </label>
             <div class="wiki-container">
                 <a href="https://temtem.wiki.gg/wiki/Temtem_Wiki" target="_blank" id="wiki-url"><img src="img/wiki.webp" alt="TemTem Wiki"></a>
@@ -156,10 +156,13 @@
             <div class="searcher">
                 <h3>Searcher</h3>
                 <div class="search-result-container">
+                    <div id="search-explained">
+                        <h3>Search results will appear here</h3>
+                    </div>
                     <table class="search-result">
-                        <tr id="search-result-headers">
-                        </tr>
                     </table>
+                    <div id="search-loader">
+                    </div>
                 </div>
             </div>
         </section>
