@@ -63,6 +63,7 @@ const selectTemtem = async dataRow => {
     slot.techniques = temtemAcual.techniques;
     slot.wikiUrl = temtemAcual.wikiUrl;
     slot.eneableEditingStats = true;
+    slot.eneableSummary = true;
 
     // Actualizamos a su vez el calculo de stats
     calculateTotalStat();

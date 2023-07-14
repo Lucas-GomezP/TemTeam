@@ -39,7 +39,7 @@ header {
     margin-bottom: var(--margin-standar);
     height: var(--header-height);
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; ----------------------------------------------------------*/
     padding-left: 20px;
     align-items: center;
 }
@@ -491,4 +491,19 @@ td {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     color: white;
+}
+
+.stats-graphics-container {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+.stats-graphics-container>div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
